@@ -41,16 +41,16 @@ public class SecConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable();
 
-        http.httpBasic();
-
-        http.formLogin();
+//        http.httpBasic();
+//
+//        http.formLogin();
 
         http
                 .addFilterAt(authenticationFilter(), BasicAuthenticationFilter.class)
                 .addFilterAfter(jwtFilter() , BasicAuthenticationFilter.class)
         ;
 
-       // http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+        http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 
         http.authorizeRequests().mvcMatchers("/login/**").permitAll();
 

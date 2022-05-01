@@ -1,6 +1,5 @@
 package com.example.springsecurityexample.security.filters;
 
-import com.example.springsecurityexample.repositories.OptRepository;
 import com.example.springsecurityexample.security.authentications.OptAuthentication;
 import com.example.springsecurityexample.security.authentications.RefreshTokenAuthentication;
 import com.example.springsecurityexample.services.TokenService;
