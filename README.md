@@ -2,7 +2,7 @@
 
 # Flow  : 
 
-1 - user enter username and password  to get opt code .
+1 - user enter username and password  to get opt code (expired in 10 min) .
 
 ![image](https://user-images.githubusercontent.com/99892846/166134687-7fdfeff6-5a85-4d95-ab89-3ea4b123b9aa.png)
 
